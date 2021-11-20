@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sketchers",
+      "handler": "sketcher.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sketchers/count",
+      "handler": "sketcher.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sketchers/:id",
+      "handler": "sketcher.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sketchers",
+      "handler": "sketcher.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sketchers/:id",
+      "handler": "sketcher.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sketchers/:id",
+      "handler": "sketcher.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

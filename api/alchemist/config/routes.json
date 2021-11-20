@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/alchemists",
+      "handler": "alchemist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alchemists/count",
+      "handler": "alchemist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alchemists/:id",
+      "handler": "alchemist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/alchemists",
+      "handler": "alchemist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/alchemists/:id",
+      "handler": "alchemist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/alchemists/:id",
+      "handler": "alchemist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sessions",
+  "info": {
+    "name": "Session",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "session_number": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true,
+      "min": "0"
+    },
+    "date": {
+      "type": "date"
+    },
+    "youtube_link": {
+      "type": "string"
+    },
+    "ras": {
+      "type": "string"
+    },
+    "timer": {
+      "type": "string"
+    },
+    "alchemist": {
+      "model": "alchemist"
+    },
+    "provoker": {
+      "model": "provoker"
+    },
+    "seeker": {
+      "model": "seeker"
+    },
+    "sketcher": {
+      "model": "sketcher"
+    },
+    "solvers": {
+      "collection": "solver"
+    }
+  }
+}

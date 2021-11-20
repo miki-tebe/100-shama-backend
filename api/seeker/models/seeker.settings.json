@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seekers",
+  "info": {
+    "name": "Seeker",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "hitch": {
+      "type": "text"
+    },
+    "solvers": {
+      "via": "seeker",
+      "collection": "solver"
+    },
+    "session": {
+      "model": "session"
+    }
+  }
+}

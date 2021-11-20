@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sketchers",
+  "info": {
+    "name": "Sketcher"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "session": {
+      "model": "session"
+    }
+  }
+}

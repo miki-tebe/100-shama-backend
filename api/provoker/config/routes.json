@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/provokers",
+      "handler": "provoker.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/provokers/count",
+      "handler": "provoker.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/provokers/:id",
+      "handler": "provoker.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/provokers",
+      "handler": "provoker.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/provokers/:id",
+      "handler": "provoker.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/provokers/:id",
+      "handler": "provoker.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

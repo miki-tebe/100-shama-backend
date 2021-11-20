@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solvers",
+  "info": {
+    "name": "Solver",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "seeker": {
+      "via": "solvers",
+      "model": "seeker"
+    }
+  }
+}

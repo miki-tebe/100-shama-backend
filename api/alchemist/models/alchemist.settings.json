@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alchemists",
+  "info": {
+    "name": "Alchemist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "method": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "session": {
+      "model": "session"
+    }
+  }
+}

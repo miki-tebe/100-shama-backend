@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provokers",
+  "info": {
+    "name": "Provoker",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "provocation": {
+      "type": "text"
+    },
+    "session": {
+      "model": "session"
+    }
+  }
+}
